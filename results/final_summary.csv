@@ -1,0 +1,5 @@
+method,accuracy,avg_time_sec
+Vector RAG (retrieval only),0.84,0.0278
+Graph RAG (retrieval only),0.62,0.0383
+Vector RAG + LLM,0.3,0.933
+Graph RAG + LLM,0.25,1.484
