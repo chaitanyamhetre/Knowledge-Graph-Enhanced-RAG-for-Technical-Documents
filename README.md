@@ -83,6 +83,24 @@ about their suitability for industrial knowledge systems.
 
 ---
 
+
+## Knowledge Graph Visualisation
+
+The knowledge graph is constructed from 1,254 entities and 6,240
+co-occurrence relationships extracted from 200 technical documents
+using spaCy NER. Nodes represent named entities (organisations,
+persons, locations, products) and edges represent co-occurrence
+within the same document, weighted by frequency.
+
+![Knowledge Graph](results/figures/knowledge_graph.png)
+
+**Graph statistics:**
+- Nodes: 1,254 entities
+- Edges: 6,240 co-occurrence relationships
+- Entity types: ORG (656), PERSON (552), GPE (322),
+  WORK_OF_ART (47), PRODUCT (22), EVENT (10)
+- Graph construction: spaCy en_core_web_sm + NetworkX
+
 ## Methods
 
 ### Vector RAG
